@@ -8,11 +8,11 @@ module Snusnu
     include Rails::Generators::Migration
 
     def self.source_root
-      @_snusnu_source_root ||= File.expand_path(File.join(File.dirname(__FILE__), 'snazzy', generator_name, 'templates'))
+      @_snusnu_source_root ||= File.expand_path(File.join(File.dirname(__FILE__), 'snusnu', generator_name, 'templates'))
     end
 
     def self.banner
-      "rails generate snazzy:#{generator_name} #{self.arguments.map{ |a| a.usage }.join(' ')} [options]"
+      "[about being sentenced to death by 'Snu-snu'] I never thought I would die this way, but I've always really hoped"
     end
 
 

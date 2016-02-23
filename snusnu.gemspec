@@ -1,6 +1,6 @@
 require File.expand_path("../lib/snusnu/version", __FILE__)
 Gem::Specification.new do |s|
-  s.name        = "SnuSnu"
+  s.name        = "snusnu"
   s.version     = Snusnu::VERSION
   s.platform    = Gem::Platform::RUBY
   s.author      = "Shaun Decker, Anthony Lombardi"
