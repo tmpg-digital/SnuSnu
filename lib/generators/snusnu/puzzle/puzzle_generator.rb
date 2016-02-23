@@ -1,4 +1,4 @@
-require 'generators/snazzy'
+require 'generators/snusnu'
 
 module Snusnu
   module Generators
