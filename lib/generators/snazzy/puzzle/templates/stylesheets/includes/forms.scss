@@ -1,0 +1,180 @@
+form_validation_error{
+  display: block;
+  float: right;
+  color: #FF0000;
+  font-weight: bold;
+}
+#register_close_button{
+  float: right;
+  margin-top: 0.5em;
+  margin-right: 0.5em;
+  font-size: 24pt;
+  cursor: pointer;
+}
+
+#register_container{
+  position: absolute;
+  bottom: 0px;
+  display: block;
+  width: 50vw;
+  height: 0vh;
+  background-color: $primary_dark_grey;
+  color: $secondary_font_color;
+  z-index: 1000;
+  transition-property: height;
+  transition-duration: .5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  overflow: auto;
+  .registration_logo{
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    display: block;
+    height: 8vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #form_container{
+    width: 80%;
+    padding: 1em;
+    margin-left: auto;
+    margin-right: auto;
+
+    p{font-weight: lighter;font-size: 12pt;text-indent: 0.5em;}
+
+    p.subtext{font-size: 10pt; font-weight: lighter;}
+
+    input{
+      -webkit-appearance: none;
+      display: block;
+      border: none;
+      width: 100%;
+      padding-top: 0.2em;
+      padding-bottom: 0.2em;
+      font-size: 14pt;
+      margin-bottom: 0.5em;
+    }
+
+    label{float: left;font-size: 14pt;text-transform: uppercase;font-weight: 500;}
+
+    .submit_button{
+      -webkit-appearance: none;
+      margin-top: 1em;
+      width: 8em;
+      height: 2em;
+      font-size: 24pt;
+      display: block;
+      font-weight: 800;
+      margin-left: auto;
+      margin-right: auto;
+      text-transform: uppercase;
+    }
+
+    .form_subtext{text-align: center;}
+
+  }
+
+  #opt_in_container{
+    margin-top: 3vh;
+    display: block;
+    width: 100%;
+    font-size: 14pt;
+    min-height: 1.6em;
+    background-color: #FFFFFF;
+    position: relative;
+
+    input[type="checkbox"] {
+      -webkit-appearance: none;
+      position: absolute;
+      background-color: $submit_button_background;
+      width: 1.6em;
+      height: 100%;
+      min-height: 1.6em;
+      margin: 0px;
+      left: 0px;
+      top: 0px;
+    }
+
+    input[type="checkbox"]:checked:after{
+      -webkit-appearance: none;
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      margin-top: -1.75vh;
+      display: inline;
+      text-align: center;
+      font-size: 3.5vh;
+      content: "\2714";
+    }
+
+    p{
+      margin-left: 1.6em;
+      width: auto;
+      font-size: 0.8em;
+      padding-top: 0.5em;
+      color: #000000;
+      text-align: center;
+      vertical-align: middle;
+
+    }
+  }
+
+}
+
+#register_container.open{
+  height: 100%;
+  #close_button{
+    float: right;
+    font-size: 4vh;
+    cursor: pointer;
+    margin-right: 1em;
+    margin-top: 0.5em;
+  }
+}
+
+#support_form{
+  margin-top: 10%;
+  p{text-align: center;}
+  input{
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    font-size: 14pt;
+    margin-bottom: 0.5em;
+  }
+  textarea{
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    font-size: 14pt;
+    margin-bottom: 0.5em;
+  }
+  label{
+    font-size: 0.8em;
+    display: block;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  input[type=submit]{
+    width: 12em;
+    font-size: 1em;
+    padding: 0.2em;
+    border: none;
+    background-color: $primary_button_background;
+    color: $primary_button_text;
+    text-transform: uppercase;
+  }
+  input[type=submit]:hover{
+    background-color: $primary_button_background_hover;
+  }
+  input[type=submit]:active{
+    background-color: $primary_button_background_active;
+  }
+
+}

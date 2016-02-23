@@ -1,0 +1,8 @@
+<%= render 'home/partials/sweeps_landing' %>
+<% if @form_opened == true%>
+  <div id="register_container" class="open">
+<% else %>
+  <div id="register_container" class="hide">
+<% end %>
+    <%= render 'home/partials/registration_form' %>
+</div>
