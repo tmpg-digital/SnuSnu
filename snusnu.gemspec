@@ -10,6 +10,7 @@ Gem::Specification.new do |s|
   s.description = "Write a gem description"
 
   s.files         = `git ls-files -z`.split("\x0")
+  s.executables   = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
   s.require_paths = ["lib"]
 
   s.license       = 'MIT'
