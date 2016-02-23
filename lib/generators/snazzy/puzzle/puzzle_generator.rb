@@ -1,6 +1,6 @@
 require 'generators/snazzy'
 
-module SnuSnu
+module Snusnu
   module Generators
     class PuzzleGenerator < Base
       include Rails::Generators::Migration

@@ -1,3 +1,3 @@
-module SnuSnu
-  VERSION = "0.0.1.rc1"
+module Snusnu
+  VERSION = "0.0.2.rc1"
 end

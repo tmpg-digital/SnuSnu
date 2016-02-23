@@ -3,7 +3,7 @@ require 'rails/generators/base'
 require 'rails/generators/migration'
 
 
-module SnuSnu
+module Snusnu
   class Base < Rails::Generators::Base
     include Rails::Generators::Migration
 
