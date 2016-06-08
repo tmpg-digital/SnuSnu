@@ -1,0 +1,18 @@
+<div id="support_form">
+  <p>Please use the form below to let us know of any questions or issues you may have.</p>
+    <%= form_tag(support_email_path) do %>
+      <div >
+          <%= label_tag 'name', 'Name' %>
+          <%= text_field_tag 'name', nil, placeholder: 'Your Name' %>
+      </div>
+      <div >
+        <%= label_tag 'email', 'Email' %>
+        <%= email_field_tag 'email', nil,  placeholder: 'Your Email Address' %>
+      </div>
+      <div >
+        <%= label_tag 'comments', 'Comments' %>
+        <%= text_area_tag 'comments', nil, rows: 4, placeholder: 'Comments...' %>
+     </div>
+     <%= submit_tag nil %>
+   <% end %>
+</div>

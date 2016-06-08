@@ -1,0 +1,141 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *= require_self
+ */
+
+@import "includes/branding.scss";
+@import "includes/menus.scss";
+@import "includes/buttons.scss";
+@import "includes/forms.scss";
+@import "home.scss";
+
+
+html, body{
+  background-color: $primary_background_color;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  color: $primary_font_color;
+  font-family: $primary_font_family;
+  position:relative;
+
+}
+#main_container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: none;
+}
+.hide{display:none;}
+
+#congrats_container{
+  float: left;
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  #congrats_top{
+    background-color: #FFFFFF;
+    background-image: $background_image_extra;
+    display: block;
+    width: 100%;
+    height: 65%;
+    margin: 0px;
+    img.small_logo{
+      height: 4vh;
+      margin-top: 3vh;
+      margin-bottom: 4vh;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h2{
+      font-size: 6vh;
+      font-weight: 800;
+      text-transform: uppercase;
+      margin: 0px;
+      padding: 0px
+    }
+    h1{
+      font-size: 12vh;
+      font-weight: 800;
+      margin: 0vh;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -1vh;
+      text-transform: uppercase;
+      display: inline-block;
+      padding: 1vh;
+      background-color: $primary_background_color;
+      color: $primary_font_color;
+      -ms-transform: rotate(0deg); /* IE 9 */
+      -webkit-transform: rotate(0deg); /* Safari */
+      transform: rotate(0deg); /* Standard syntax */
+    }
+    h1:before{
+       content: ' ';
+       display: block;
+       background-color: $primary_background_color;
+       position: absolute;
+       width: .235em;
+       height: 100%;
+       left: -.1em;
+       top: 0;
+       -webkit-transform: skew(6deg);
+       -moz-transform: skew(3deg);
+       -ms-transform: skew(3deg);
+       -o-transform: skew(3deg);
+       transform: skew(3deg);
+     }
+     h1:after{
+        content: ' ';
+        display: block;
+        background-color: $primary_background_color;
+        position: absolute;
+        width: .235em;
+        height: 100%;
+        right: -.1em;
+        top: 0;
+        -webkit-transform: skew(-2deg);
+        -moz-transform: skew(-2deg);
+        -ms-transform: skew(-2deg);
+        -o-transform: skew(-2deg);
+        transform: skew(-2deg);
+      }
+      p{font-size: 3vh}
+
+    }
+
+  }
+  #congrats_bottom{
+    float: left;
+    display: block;
+    background-color: $primary_font_color;
+    width: 100%;
+    height: 35%;
+    margin: 0px;
+    p{
+      font-size: 3.5vh;
+      font-weight: 800;
+      color: #F3E100;
+      text-transform: uppercase;
+      margin: 0px;
+      padding: 0px;
+    }
+    p.smaller{
+      font-size: 3vh;
+      margin: 0px;
+      padding: 0px;
+    }
+  }

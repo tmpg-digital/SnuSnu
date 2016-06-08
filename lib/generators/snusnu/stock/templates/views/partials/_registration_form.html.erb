@@ -1,0 +1,33 @@
+<div id="register_close_button" onclick="document.getElementById('register_container').className = ''">&#215;</div>
+<% if @form_opened == true%>
+  <div id="form_container">
+<%else%>
+  <div id="form_container" class="hide">
+<% end %>
+    <p class="subtext">* = Required</p>
+    <p>Enter for your chance to win absolutely nothing!</p>
+    <%= form_tag( 'sweeps',id: "sweeps_form", method: "post" ) do %>
+      <%= label_tag( :full_name, "Full Name*") %>
+      <% unless @new_user.nil? %>
+        <% if @new_user.errors[:full_name].any? %>
+          <div class="form_validation_error"><%= @new_user.errors[:full_name].first %></div>
+        <% end %>
+      <% end %>
+      <%= text_field(:user, :full_name,:value => @new_user[:full_name], :required => true) %>
+      <%= label_tag( :email, "Email Address*") %>
+      <% unless @new_user.nil? %>
+        <% if @new_user.errors[:email].any? %>
+          <div class="form_validation_error"><%= @new_user.errors[:email].first %></div>
+        <% end %>
+      <% end %>
+      <%= text_field(:user, :email,:value => @new_user[:email], :required => true) %>
+      <div id="opt_in_container">
+        <%= check_box(:user, :opt_in,:value => @new_user[:opt_in])%><p>I would like to recieve future emails from TMPG.</p>
+      </div>
+      <%= submit_tag "Submit", class: "submit_button" %>
+    <% end %>
+    <div class="form_subtext">
+      <p class="subtext">By clicking submit, you agree to the official rules and privacy policy of this sweepstakes.</p>
+      <p>NO PURCHASE NECESSARY. SWEEPSTAKES ENDS 2/29/3748</p>
+    </div>
+  </div>

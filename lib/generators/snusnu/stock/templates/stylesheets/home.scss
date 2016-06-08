@@ -1,0 +1,132 @@
+#left_pane{
+  width: 50%;
+  float: left;
+  height: 100%;
+  font-size: 12pt;
+  background: $left_panel_background_color;
+}
+
+#right_pane{
+  width: 50%;
+  float: left;
+  background-image: $background_image_right_panel, linear-gradient(-45deg, $primary_red, $primary_orange);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+}
+
+#footer_menu{
+  @extend .footer_menu_scaffold;
+}
+
+p.bottom_text{
+  padding: 0.2em;
+  font-size: 2.5vh;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bolder;
+  a{text-decoration: none; color: $primary_font_color;}
+}
+
+.main_image{
+  display: inline-block;
+  position: inherit;
+  height: 32vh;
+  margin-top: 10vh;
+  margin-bottom: 0.5vh;
+  vertical-align: middle;
+}
+.products_image{
+  display: inline-block;
+  position: inherit;
+  height: 25vh;
+  margin-top: 3vh;
+  margin-bottom: 0.5vh;
+  vertical-align: middle;
+}
+h1.fizzy{
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 8em;
+  padding-left: 4em;
+  padding-right: 4em;
+  font-color: $primary_font_color;
+  background-color: $primary_background_color;
+  font-weight:800;
+  z-index: 80;
+}
+#landing_container{
+  width: 100%;
+  height: 75%;
+  position: relative;
+  background-image: $background_image_left_panel;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#main_content{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  overflow: auto;
+  .main_left{
+    display: inline-block;
+    width: 99%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+    .thank_you_container{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 1vh;
+      text-align: center;
+      font-weight: bolder;
+            h1{
+              font-size: 3.5vh;
+              font-weight: bolder;
+              margin: 0.2em;
+              margin-left: auto;
+              margin-right: auto;
+              text-transform: uppercase;
+              display: inline-block;
+              padding: 0.2em;
+              background-color: $primary_font_color;
+              color: $secondary_font_color;
+              -ms-transform: rotate(3deg); /* IE 9 */
+              -webkit-transform: rotate(3deg); /* Safari */
+              transform: rotate(3deg); /* Standard syntax */
+            }
+
+              }
+
+
+              .bottom_text_thin{
+                font-weight: normal;
+              }
+              .bottom_text{
+                text-transform: uppercase;
+                font-weight: bolder;
+                font-size: 16pt;
+                text-align: center;
+                a{
+                  text-align: center;
+                  font-weight: bolder;
+                  font-size: 1.1em;
+                }
+              }
+            }
+
+
+
+    }
+
+
+#puzzle_container{
+  width: 100%;
+  height: 75%;
+}

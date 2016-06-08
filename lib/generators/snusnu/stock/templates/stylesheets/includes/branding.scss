@@ -1,0 +1,73 @@
+// Primary Color Palette
+$primary_green: #60D84C;
+$primary_white: #FFFFFF;
+$primary_orange: #F39B1C;
+$primary_yellow: #ECC72F;
+$primary_black: #181A1C;
+$primary_dark_grey: #252933;
+$primary_light_grey: #A7A9AC;
+$primary_red: #E85625;
+$large_logo_white: null;
+$large_logo_black: null;
+$large_logo_color: null;
+$extra_logo_white: null;
+
+// Scaffolding Colors
+$primary_background_color: $primary_dark_grey;
+$left_panel_background_color: $primary_light_grey;
+$right_panel_background_color: $primary_dark_grey;
+$secondary_background_color: $primary_orange;
+
+// Font Defaults
+$primary_font_family: 'Work Sans', sans-serif;
+$primary_font_color: $primary_black;
+$secondary_font_face: null;
+$secondary_font_color: $primary_white;
+$left_panel_primary_font_size:null;
+$right_panel_primary_font_size:null;
+
+// Images
+$background_image_window:null;
+$background_image_left_panel: $extra_logo_white;
+$background_image_left_panel_small: $extra_logo_white;
+$background_image_right_panel: $large_logo_white;
+$background_image_extra:null;
+$main_logo_large_light: $large_logo_white;
+$main_logo_large_dark: $large_logo_black;
+$main_logo_small_light: null;
+$main_logo_small_dark: $large_logo_black;
+$main_logo_icon_light: null;
+$main_logo_icon_dark: null;
+$product_image_large_1: null;
+
+// Buttons
+$primary_button_background: $primary_red;
+$primary_button_background_hover: $primary_orange;
+$primary_button_background_active: primary_yellow;
+$primary_button_text: $primary_white;
+
+$secondary_button_background: $primary_orange;
+$secondary_button_background_hover: $primary_yellow;
+$secondary_button_background_active: $primary_red;
+$secondary_button_text: $primary_white;
+
+$submit_button_background: $primary_red;
+$submit_button_background_hover: $primary_orange;
+$submit_button_background_active: $primary_yellow;
+$submit_button_text: $primary_white;
+
+
+// Forms
+$main_green: #015245;
+$main_yellow: #f3e100;
+$right_pane_bg: #1d544b;
+
+$light_green_button_background: #72AA42;
+$light_green_button_background_hover: #99e35b;
+$light_green_button_background_active: #629139;
+$light_green_button_text: #ffffff;
+
+$yellow_button_background: #F4E200;
+$yellow_button_background_hover: #FFF35D;
+$yellow_button_background_active: #E7D600;
+$yellow_button_text: #1D544B;
