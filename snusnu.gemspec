@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.author      = "Shaun Decker, Anthony Lombardi"
   s.email       = "sdecker@tmpg.com,alombardi@tmpg.com"
   s.homepage    = "http://tmpg.com"
-  s.summary     = "Write a gem summary"
-  s.description = "Write a gem description"
+  s.summary     = "Generates files for rails site"
+  s.description = "Generates files for TMPG client sites"
 
   s.files         = `git ls-files -z`.split("\x0")
   s.executables   = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
